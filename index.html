@@ -1,3 +1,7 @@
+<!-- 
+    *Estoy trabajando en mobile first para las proximas entregas tener listo el responsive.
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,50 +10,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/CM-logoOscuro.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Cristian Mansilla - Full Stack Web Developer</title>
 </head>
 <body>
     <header>
-        <nav class="container">
+        <nav class="containerNav">
             <img src="./assets/CM-logoOscuro.png" alt="Logo CM" class="logo">
-                <ul class="containerLi">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <ul class="containerLi">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <hr>
     <main>
         <section>
-            <div class="presentation">
+            <div class="containerHero">
                 <article class="principal">
                     <h1>PORTFOLIO</h1>
                     <h2 class="tittle">Full Stack Web Developer</h2>
                     <h2 class="by">By Cristian Mansilla</h2>
                 </article>
-                <aside class="programmingImage">
+                <div class="programmingImage">
                     <img src="./assets/Programming.svg" alt="Programming image" class="codeImage">
-                </aside>
+                </div>
             </div>
         </section>
         
         <section class="aboutMe">
             <article>
-                <h2 class="tittleSection2">ABOUT ME</h2>
+                <h2 class="tittleSection">ABOUT ME</h2>
                 <p class="paragraphAbout">I'm Cristian Mansilla future Full Stack Web Devoleper. I'm from Goya, Corrientes 🐊. I'm currently studying the University Technician in Programming at the UTN (National Technological University) and the agile career of Full Stack Web in Nucba.</p>
                 <a href="#"><h2 class="learnMore">LEARN MORE →</h2></a>
             </article>
         </section>
 
+        <section class="technologies">
+            <article>
+                <h2 class="tittleSection">TECHNOLOGIES</h2>
+                <p class="paragraphTechnologies">I'm passionate about Web Development. Therefore, I chose to specialize in the MERN Stack in Nucba. I'm currently learning and developing practice projects with the following technologies:</p>
+                <div class="tec">
+                    <div class="icon">
+                        <i class="fa-brands fa-html5"></i>
+                        <h2>HTML5</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h2>CSS3</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-js"></i>
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-react"></i>
+                        <h2>React</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h2>NodeJS</h2>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <h2>Git</h2>
+                    </div>
+                </div>
+            </article>
+        </section>
+
         <section class="works">
             <article>
-                <h2>Featured Work</h2>
+                <h2 class="tittleSection">FEATURED WORK</h2>
                 <div class="proyects">
-                    <a href="#"><h2>Login</h2></a>
-                    <a href="#"><h2>Landing Page</h2></a>
-                    <a href="#"><h2>EComerce</h2></a>
+                    <a href="#">
+                        <div class="proyect1">
+                            <i class="fa-solid fa-address-card"></i>
+                            <h2>Login</h2>
+                            <p>Challengue Nro. 1</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="proyect2">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <h2>Landing Page</h2>
+                            <p>Challengue Nro. 2</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="proyect3">
+                            <i class="fa-solid fa-shop"></i>
+                            <h2>EComerce</h2>
+                            <p>Challengue Nro. 3</p>
+                        </div>
+                    </a>
                 </div>
                 <a href="#"><h2 class="viewAll">VIEW ALL →</h2></a>
             </article>
