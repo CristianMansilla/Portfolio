@@ -1,7 +1,3 @@
-<!-- 
-    *Estoy trabajando en mobile first para las proximas entregas tener listo el responsive.
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,44 +11,46 @@
 </head>
 <body>
     <header>
-        <nav class="containerNav">
-            <img src="./assets/CM-logoOscuro.png" alt="Logo CM" class="logo">
-            <ul class="containerLi">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav>
+            <ul class="menu">
+                <a href="#">
+                    <img src="./assets/CM-logoOscuro.png" alt="CM - logo" class="logo">
+                </a>
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#work">Work</a></li>
+                <li class="item"><a href="#about">About</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
+                <li class="btn_container"><a href=""><i class="fa-solid fa-bars"></i></a></li>
             </ul>
+            <!-- <input type="checkbox" name="" id="menu-toggle" class="menu-toggle"> -->
         </nav>
     </header>
-    <hr>
+
     <main>
-        <section>
-            <div class="containerHero">
-                <article class="principal">
-                    <h1>PORTFOLIO</h1>
-                    <h2 class="tittle">Full Stack Web Developer</h2>
-                    <h2 class="by">By Cristian Mansilla</h2>
-                </article>
-                <div class="programmingImage">
-                    <img src="./assets/Programming.svg" alt="Programming image" class="codeImage">
-                </div>
+        <section class="hero_section">
+            <div class="hero-text">
+                <h1>PORTFOLIO</h1>
+                <h2 class="tittle">Full Stack Web Developer</h2>
+                <h2 class="by">By Cristian Mansilla</h2>
+            </div>
+            <div class="hero-img">
+                <img src="./assets/Programming.svg" alt="Programming image">
             </div>
         </section>
-        
-        <section class="aboutMe">
-            <article>
+
+        <section class="aboutme_section">
+            <div class="about_content">
                 <h2 class="tittleSection">ABOUT ME</h2>
-                <p class="paragraphAbout">I'm Cristian Mansilla future Full Stack Web Devoleper. I'm from Goya, Corrientes 🐊. I'm currently studying the University Technician in Programming at the UTN (National Technological University) and the agile career of Full Stack Web in Nucba.</p>
+                <p class="paragraph">I'm Cristian Mansilla future Full Stack Web Devoleper. I'm from Goya, Corrientes 🐊. I'm currently studying the University Technician in Programming at the UTN (National Technological University) and the agile career of Full Stack Web in Nucba.</p>
                 <a href="#"><h2 class="learnMore">LEARN MORE →</h2></a>
-            </article>
+            </div>
         </section>
 
-        <section class="technologies">
-            <article>
+        <section class="technologie_section">
+            <div class="technologie_content">
                 <h2 class="tittleSection">TECHNOLOGIES</h2>
-                <p class="paragraphTechnologies">I'm passionate about Web Development. Therefore, I chose to specialize in the MERN Stack in Nucba. I'm currently learning and developing practice projects with the following technologies:</p>
-                <div class="tec">
+                <p class="paragraph">I'm passionate about Web Development. Therefore, I chose to specialize in the MERN Stack in Nucba. I'm currently learning and developing practice projects with the following technologies:</p>
+                <div class="technologies">
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
                         <h2>HTML5</h2>
@@ -78,40 +76,101 @@
                         <h2>Git</h2>
                     </div>
                 </div>
-            </article>
+            </div>
         </section>
 
-        <section class="works">
-            <article>
-                <h2 class="tittleSection">FEATURED WORK</h2>
-                <div class="proyects">
-                    <a href="#">
-                        <div class="proyect1">
-                            <i class="fa-solid fa-address-card"></i>
-                            <h2>Login</h2>
-                            <p>Challengue Nro. 1</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="proyect2">
-                            <i class="fa-solid fa-file-lines"></i>
-                            <h2>Landing Page</h2>
-                            <p>Challengue Nro. 2</p>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="proyect3">
-                            <i class="fa-solid fa-shop"></i>
-                            <h2>EComerce</h2>
-                            <p>Challengue Nro. 3</p>
-                        </div>
-                    </a>
+        <section class="work_section">
+            <h2 class="tittleSection">FEATURED WORK</h2>
+            <div class="works_content">
+                <a href="#" class="proyect">
+                    <i class="fa-solid fa-address-card"></i>
+                    <h2>Login</h2>
+                    <p>Challengue Nro. 1</p>
+                </a>
+                <a href="#" class="proyect">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <h2>Landing Page</h2>
+                    <p>Challengue Nro. 2</p>
+                </a>
+                <a href="#" class="proyect">
+                    <i class="fa-solid fa-shop"></i>
+                    <h2>EComerce</h2>
+                    <p>Challengue Nro. 3</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="client_section">
+            <div class="client_content">
+                <h2 class="tittleSection">CLIENTS</h2>
+                <p class="paragraph">I'm proud to have collaborated with some awesome companies:</p>
+                <div class="clients">
+                    <div class="icon-client">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-twitch"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-steam"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-xbox"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-steam"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-playstation"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                    <div class="icon-client">
+                        <i class="fa-brands fa-cc-visa"></i>
+                    </div>
                 </div>
-                <a href="#"><h2 class="viewAll">VIEW ALL →</h2></a>
-            </article>
+            </div>
+        </section>
+
+        <section class="contact_section">
+            <div class="contact_content">
+                <h2 class="tittleSection">Contact Me</h2>
+                
+                <div class="contacto">
+                    <div class="datos">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="paragraph">Calle falsa 123</p>
+                    </div>
+                    <div class="datos">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p class="paragraph">mailfalso@gmail.com</p>
+                    </div>
+                    <div class="datos">
+                        <i class="fa-solid fa-phone"></i>
+                        <p class="paragraph">03 03 456</p>
+                    </div>
+                </div>
+
+                <div class="ubicacionMaps">
+                    <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Espa%C3%B1a%20123%20Goya+(Ubicaci%C3%B3n)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+                </div>
+            </div>
         </section>
     </main>
-    
+
     <footer>
         <p>Hecho con 🧡 en <b>Nucba</b></p>
     </footer>
